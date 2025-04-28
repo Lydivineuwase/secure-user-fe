@@ -228,7 +228,7 @@ const AdminDashboard: React.FC = () => {
                   fill="#8884d8"
                   label
                 >
-                  {roleDistributionData.map((entry, index) => (
+                  {roleDistributionData.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
